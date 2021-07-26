@@ -1,0 +1,353 @@
+*{
+   margin: 0;
+   padding: 0;
+
+}
+#all{
+   width: 100%;
+ 
+   
+}
+.logo img{
+   width: 200px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 2;
+}
+.logo .fas{
+   font-size: 90px;
+   position: fixed;
+   top: 10px;
+   right: 50px;
+   z-index: 8;
+}
+.sidebar{
+   background-color:rgba(119, 119, 119, 0.9);
+   height: 50vh;
+   width: 50vh;
+   text-align: center;
+   position: absolute;
+   left: -50vh;
+   top: -150px;
+   z-index: 5;
+   border-radius: 50%;
+   transition: all .5s;
+
+   
+}
+.sidebar ul{
+   padding: 260px 0;
+   padding-left: 90px;
+   list-style: none;
+}
+.sidebar a{
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 2;
+  color: aliceblue;
+}
+#btn{
+opacity: 0; 
+position: absolute;
+}
+#btn:checked ~.sidebar{
+   left:-200px;
+}
+
+
+
+.banner{
+   position: relative;
+   max-width: 100%;
+   height: 600px;
+   background-image: url(/img/banner2.jpeg);
+   background-size:cover;
+   background-repeat: no-repeat;
+   
+}
+
+
+.banner-cont{
+ position: absolute;
+   margin: auto;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   
+}
+.banner .txtbox{
+   max-width: 700px;
+   margin: 0 auto;
+   background-color: rgba(85, 85, 85, 0.37);
+   margin-top: 70px;
+   box-sizing: border-box;
+   border-radius: 60px;
+}
+.banner-cont{
+   text-align: center;
+  
+   box-sizing: border-box;
+   width: 100%;
+   
+   
+}
+.banner-cont h2{
+ color: white;
+ font-size: 32px;
+ line-height: 100px;
+ 
+}
+.banner-cont p{
+   font-size: 30px;
+   color: white;
+}
+.banner-cont a{
+   display: inline-block;
+   text-decoration: none;
+   background-color: wheat;
+   padding: 10px;
+   border-radius: 50px;
+   margin: 50px;
+}
+/* =====3 */
+
+.oldcar{
+   max-width: 1000px;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+}
+.oldcar h1{
+   width: 100%;
+   text-align: center;
+   margin: 80px 0px;
+   
+   font-size: 50px;
+ 
+}
+.oldcar ol{
+   width: 50%;
+   margin: auto;
+
+  
+}
+.oldcar .imgbox{
+   width: 50%;
+}
+.oldcar .imgbox img{
+   width: 100%;
+}
+
+.old-txt{
+   width: 50%;
+   padding: 40px;
+   box-sizing: border-box;
+}
+.old-txt h4{
+   font-size: 26px;
+   line-height: 3;
+   text-align: center;
+}
+.old-txt p{
+  font-size: 20px;
+}
+
+/* ======4 */
+
+
+.bgimg{
+   width: 100%;
+   height: 900px;
+   background-size: cover;
+   margin: 30px 0;
+   background-image: url('/img/bg1.jpeg');
+   transform: skewY(-3deg);
+   padding: 0.1px;
+
+  
+
+  
+   
+}
+.bgimg .wrap{
+   max-width: 1000px;
+   margin: 60px auto;
+   transform: skewY(3deg);
+   display: flex;
+   flex-wrap: wrap;
+   
+}
+.bgimg .wrap .h1{
+   margin: 30px;
+   font-size: 36px;
+   color: wheat;
+  width: 100%;
+  text-align: center;
+}
+
+
+.card-box{
+   width: 23%;
+   box-sizing: border-box;
+   margin: 1.5rem 10px;
+   padding: 1rem;
+   text-align: center;
+   background-color: rgba(253,253,253,.9);
+   font-size: 1.6rem;
+   border-radius: 3px;
+   box-sizing: border-box;
+   box-shadow: 0 1.5rem 4rem rgb(10 10 10 / 30%);
+   transition: all .3s;
+}
+.card-box .fas{
+font-size: 90px;
+
+display: inline-block;
+}
+.card-box .title{
+   display: block;
+   font-size: 22px;
+   font-weight: bold;
+   margin: 10px 0px;
+   
+}
+.card-box__text{
+   margin: 10px 0px  ;
+   display: block;
+   font-size: 20px;
+}
+/* ===========card */
+.minicooper{
+   max-width: 1000px;
+   margin: auto;
+   display: flex;
+flex-wrap: wrap;
+}
+.minicooper h1{
+  width: 100%;
+  text-align: center;
+  margin: 30px 0px;
+  font-size: 60px;
+}
+.card-container{
+   width: 300px;
+   height: 400px;
+   margin-top: 30px;
+   position: relative;
+   perspective: 1000px;
+   margin: 0 10px;
+   
+}
+
+.cover,.back{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   transition: transform .25s ease-in-out;
+   backface-visibility: hidden;
+}
+.cover{
+   background-color: rgba(245, 222, 179, 0.137);
+   transform: rotateY(0deg);
+}
+.cover h2{
+  font-size: 26px;
+  text-align: center;
+  margin: 10px;
+}
+.cover h2::after{
+ content: '';
+ display: block;
+ width: 60%;
+ height: 30px;
+margin: auto;
+ border-bottom: 1px solid #000;
+ margin-top: -20px;
+}
+
+.cover p{
+  font-size: 22px;
+  text-align: center;
+  padding-top: 30px;
+ 
+}
+.cover img{
+   width: 100%;
+   height: 195px;
+}
+.back{
+   background-color:rgba(245, 222, 179, 0.562);
+  transform: rotateY(-180deg);
+}
+.back p{
+   display: block;
+ font-size: 20px;
+ line-height: 1.6;
+ padding: 30px;
+ color:black;
+
+}
+
+.card-container:hover .cover{
+   transform: rotateY(180deg);
+}
+.card-container:hover .back{
+   transform: rotateY(0deg);
+}
+
+
+footer{
+   height: 310px;
+   background-color: #333;
+   margin-top: 80px;
+   
+
+}
+.footer-item{
+   max-width: 1000px;
+   height: 310px;
+   margin: auto;
+   display: flex;
+  padding-top: 30px;
+   box-sizing: border-box;
+}
+.footer-item div{
+   width: 50%;
+   margin: 10px;
+}
+
+.footer-item div ul{
+   list-style: none;
+   font-size:30px;
+   padding: 50px;
+   text-align: center;
+   
+}
+.footer-item div ul a{
+   text-decoration: none;
+   color: white;
+}
+
+.carimg{
+   background-image: url(/img/car1.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+ 
+   height: 220px;
+}
+
+@media screen and (max-width:960px) {
+   .card-box{
+      width: 47%;
+   }
+   .minicooper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+   
+   }
+}
